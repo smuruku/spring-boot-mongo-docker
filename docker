@@ -3,3 +3,4 @@ def buildnumber = BUILD_NUMBER
     stage("Git CheckOut"){
         git url: 'https://github.com/smuruku/spring-boot-mongo-docker.git',branch: 'master'
     }
+    }
