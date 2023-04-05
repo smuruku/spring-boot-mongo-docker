@@ -1,4 +1,5 @@
 node{
+def build number = BUILD_NUMBER
 def mavenhome = tool name: "maven"
      stage("Git CheckOut"){
         git url: 'https://github.com/smuruku/spring-boot-mongo-docker.git',branch: 'master'
@@ -7,7 +8,9 @@ def mavenhome = tool name: "maven"
      
       sh "${mavenhome}/bin/mvn clean package"
     } 
-    stage(" Build docker image"){
+      stage("Build Dokcer Image") {
+         sh "docker build -t smuruku/spring ."
+    }
     
     }
     }
