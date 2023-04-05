@@ -1,5 +1,5 @@
 node{
-def mavenhome = tool name: "maven3.9.1"
+def mavenhome = tool name: "maven"
    tools
    {
    maven "maven"
