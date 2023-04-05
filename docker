@@ -2,7 +2,7 @@ node{
 def mavenhome = tool name: "maven3.9.1"
    tools
    {
-   maven "maven 3.9.1"
+   maven "maven"
    }
     stage("Git CheckOut"){
         git url: 'https://github.com/smuruku/spring-boot-mongo-docker.git',branch: 'master'
